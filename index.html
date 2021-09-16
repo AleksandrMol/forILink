@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jane Doe</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo"></div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-item-link">
+                            Jane Doe
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tell" class="nav-item-link">
+                            Tell us about yourself
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slider" class="nav-item-link">
+                            Slider
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div id="hero" class="container hero-container">
+            <div class="hero-img"></div>
+            <div class="hero-text">
+                <h1  class="hero-header">
+                    Jane Doe
+                </h1>
+                <ul class="hero-data-list">
+                    <li class="hero-data-item">
+                        <h4 class="hero-data-header">Date of birth</h4>
+                        21.04.2001
+                    </li>
+                    <li class="hero-data-item">
+                        <h4 class="hero-data-header">Gender</h4>
+                        Female
+                    </li>
+                    <li class="hero-data-item">
+                        <h4 class="hero-data-header">Country</h4>
+                        Corea
+                    </li>
+                </ul>
+                <h3 class="hero-about-header">
+                    About me
+                </h3>
+                <p class="hero-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="hero-descriptioin">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tell">
+        <div id="tell" class="container tell-container">
+            <h2 class="tell-header">
+                Tell us about yourself
+            </h2>
+            <form method="POST" action="" class="tell-form-container formWithValidation">
+                <div class="first-load">
+                    <div class="tell-cell">
+                        <label for="name" class="tell-label">
+                            Your name
+                        </label>
+                        <input name="name" id="name" type="text" class="tell-input" placeholder="Tell us your name">
+                        <div class="error-text">
+                            Error text
+                        </div>
+                    </div>
+                    <div class="tell-cell">
+                        <label for="gender" class="tell-label">
+                            Your gender
+                        </label>
+                        <input name="gender" id="gender" type="text" class="tell-input" placeholder="Chose your gender">
+                        <div class="error-text">
+                            Error text
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second-load">
+                    <div class="tell-cell">
+                        <label for="country" class="tell-label">
+                            Your country
+                        </label>
+                        <input name="country" id="country" type="text" class="tell-input" placeholder="Where are you from?">
+                        <div class="error-text">
+                            Error text
+                        </div>
+                    </div>
+                    <div class="tell-cell">
+                        <label for="city" class="tell-label">
+                            Your City
+                        </label>
+                        <input name="city" id="city" type="text" class="tell-input" placeholder="Your native city">
+                        <div class="error-text">
+                            Error text
+                        </div>
+                    </div>
+                    <div class="tell-cell">
+                        <label for="birth" class="tell-label">
+                            Your date of birth
+                        </label>
+                        <input name="birth" id="birth" type="text" class="tell-input" placeholder="dd.mm.yyyy">
+                        <div class="error-text">
+                            Error text
+                        </div>
+                    </div>
+                </div>
+
+                <div id="uploadContainer" class="third-load">
+                    <input id="file-input" type="file" name="file" >
+                    <label for="file-input">Add document</label>
+                    <span>Proof your identity with some documents</span>
+                </div>
+
+                <div class="fourth-load">
+                    <button class="fotm-button" disabled>Send info</button>
+                    <label class="categories-label" for="publ">
+                        Completed
+                        <input class="categories-checkbox" type="checkbox" name="publ" id="publ">
+                        <span class="castom-checkbox"></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <sectoin class="slider">
+        <div id="slider" class="container slider-container">
+            <div class="slider-wrapper">
+                <div class="slide slide-1"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+            </div>
+            
+            <div class="slider-buttons">
+                <div class="back-button"></div>
+                <div class="next-button"></div>
+            </div>
+
+            <h1 class="slider-header">
+                Slide this photo
+            </h1>
+            <p class="slide-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+            </p>
+            <div class="slider-pagination">
+                <div class="ball active-ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+            </div>
+        </div>
+    </sectoin>
+
+    <script src="./js/inputLoad.js"></script>
+    <script src="./js/dragAndDrop.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/validate.js"></script>
+</body>
+</html>
